@@ -1,0 +1,114 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+       <!-- custom css file link  -->
+       <link rel="stylesheet" href="Main.css">
+    
+    </head>
+
+
+    <body>
+        <div class="header">
+            <div class="header-background"></div>
+            <h1>Code Memes</h1>
+          </div>
+
+    <div class="container" >
+
+ 
+    <div id="headtop">
+
+       <input type="text" placeholder="search items"  id="search-box">
+           
+       </div>
+    <div id="imagesinside" style="margin-top:200px; padding-bottom:200px;">
+       <div class="image-container">
+    
+    <!-- Put Here -->
+    <!-- Put Here -->
+    <!-- Put Here -->
+    <!-- Put Here -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a class="image" 
+    data-title="loading animation square in a circle" 
+    href="https://sites.google.com/view/codememes/loading-animation-dots"><div><img 
+    src="https://i.ibb.co/N9wcS0R/Screenshot-50.png">
+    <h3>Loading animation square in a circle</h3></div></a>
+    
+    
+    
+    
+    
+    
+    
+    </div>
+       </div>
+    </div>
+    
+    
+    
+    
+    <script>
+    
+    let searchBox = document.querySelector('#search-box');
+    let images = document.querySelectorAll('.container .image-container .image');
+    
+    searchBox.oninput = () =>{
+       images.forEach(hide => hide.style.display = 'none');
+       let value = searchBox.value.toLowerCase();
+       images.forEach(filter =>{
+          let title = filter.getAttribute('data-title');
+          if(title.includes(value)){
+             filter.style.display = 'block';
+          }
+          if(searchBox.value == ''){
+             filter.style.display = 'block';
+          }
+       });
+    };
+    
+    
+    
+      function showHowToSearch(){
+    
+       var x = document.getElementById("HowToSearch");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    
+      
+    
+    </script>
+    
+    
+    
+    
+    </body>
+    </html>
+    
+    
+    
+    
